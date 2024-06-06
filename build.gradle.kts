@@ -15,6 +15,12 @@ dependencies {
     antlr("org.antlr:antlr4:4.13.1")
     implementation("org.antlr:antlr4-runtime:4.13.1")
 
+    implementation("org.ow2.asm:asm:9.7")
+
+    implementation("org.springframework:spring-beans:6.1.8")
+    implementation("org.springframework:spring-context:6.1.8")
+    implementation("org.springframework:spring-core:6.1.8")
+
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
 }

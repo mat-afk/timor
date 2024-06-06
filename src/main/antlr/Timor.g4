@@ -2,13 +2,16 @@ grammar Timor;
 
 @header {
 package org.timor;
+import org.timor.TimorListener;
+import org.timor.TimorParser;
+import org.timor.TimorVisitor;
 }
 
 // parser rules
 compilationUnit : statement* EOF; // EOF: End of file
 statement: ( print | variable ) SEMICOLON;
 variable: VARIABLE_KEYWORD IDENTIFIER EQUALS value;
-print: PRINT ( value | IDENTIFIER );
+print: PRINT IDENTIFIER;
 value: NUMBER | STRING;
 
 // lexer rules (tokens)
