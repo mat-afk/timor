@@ -1,9 +1,9 @@
 package org.timor;
 
-import org.timor.TimorLexer;
+import org.timor.compiler.Compiler;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        new Compiler().compile(args);
     }
 }

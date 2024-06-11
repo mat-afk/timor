@@ -8,16 +8,16 @@ import org.timor.TimorVisitor;
 }
 
 // parser rules
-compilationUnit : statement* EOF; // EOF: End of file
-statement: ( print | variable ) SEMICOLON;
+compilationUnit: statement* EOF; // EOF: End of file
+statement: (variable | print) SEMICOLON;
 variable: VARIABLE_KEYWORD IDENTIFIER EQUALS value;
 print: PRINT IDENTIFIER;
 value: NUMBER | STRING;
 
 // lexer rules (tokens)
 VARIABLE_KEYWORD: 'var';
-IDENTIFIER: [A-Za-z][._\-A-Za-z0-9]*;
 PRINT: 'print';
+IDENTIFIER: [A-Za-z][._\-A-Za-z0-9]+;
 
 // types
 NUMBER: [0-9]+;

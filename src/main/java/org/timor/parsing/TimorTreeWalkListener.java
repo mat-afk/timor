@@ -1,4 +1,4 @@
-package org.timor.parser;
+package org.timor.parsing;
 
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.TerminalNode;
