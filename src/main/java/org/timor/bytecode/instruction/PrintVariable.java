@@ -29,7 +29,7 @@ public class PrintVariable implements Instruction, Opcodes {
                 methodVisitor.visitVarInsn(ILOAD, identifier);
                 methodVisitor.visitMethodInsn(
                         INVOKEVIRTUAL,
-                        "java/ioPrintStream",
+                        "java/io/PrintStream",
                         "println",
                         "(I)V",
                         false
@@ -39,9 +39,9 @@ public class PrintVariable implements Instruction, Opcodes {
                 methodVisitor.visitVarInsn(ALOAD, identifier);
                 methodVisitor.visitMethodInsn(
                         INVOKEVIRTUAL,
-                        "java/ioPrintStream",
+                        "java/io/PrintStream",
                         "println",
-                        "(I)V",
+                        "(Ljava/lang/String;)V",
                         false
                 );
             }
