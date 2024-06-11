@@ -1,0 +1,5 @@
+var num = 5;
+print num;
+
+var greeting = "Hello, world";
+print greeting;
